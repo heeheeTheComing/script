@@ -1,0 +1,5 @@
+while getgenv().farm == true do
+task.wait()
+if getgenv().farm == false then return end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-93.90117645263672, 61.39884567260742, 143.81243896484375)
+end
