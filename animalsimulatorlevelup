@@ -1,17 +1,13 @@
 while true do
-    if getgenv().levelup == false then
-        return
-end
-    local args = {
-        [1] = workspace.Eggs.Egg7
+if getgenv().levelup == false then return end
+local args = {
+[1] = workspace.Eggs.Egg7
     }
 
-    game:GetService("ReplicatedStorage").EggEvent:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").EggEvent:FireServer(unpack(args))
 
-    local args = {
-        [1] = workspace.Treasures.Treasure1
+local args = {
+[1] = workspace.Treasures.Treasure1
     }
-
-    game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
-    task.wait(0.5)
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
 end
